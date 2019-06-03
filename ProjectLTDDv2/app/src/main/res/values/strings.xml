@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">NotePro</string>
+    <string-array name="loainhacnho">
+        <item name="value1">Hằng ngày</item>
+        <item name="value2">Báo giờ</item>
+        <item name="value3">Trống</item>
+    </string-array>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="Lưu"
+        app:showAsAction="always"
+        android:id="@+id/action_them"></item>
+    <item android:title="hinh anh"
+        android:icon="@drawable/ic_image_black_24dp"
+        app:showAsAction="always">
+        <menu>
+            <item android:title="Chon hinh"
+            android:id="@+id/action_chonHinh"></item>
+            <item android:title="Chup hinh"
+                android:id="@+id/action_chupHinh">
+            </item>
+        </menu>
+    </item>
+    <item android:title="Đánh dấu"
+        android:icon="@drawable/action_danhdau_modify"
+        android:id="@+id/action_danhDau_them"
+        app:showAsAction="always"></item>
+
+    <item android:title="Hẹn giờ"
+        android:icon="@drawable/oclock"
+        android:id="@+id/action_henGio_them"
+        app:showAsAction="always"></item>
+</menu>

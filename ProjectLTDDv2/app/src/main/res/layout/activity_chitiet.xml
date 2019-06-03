@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ChiTiet">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:errorEnabled="true"
+        app:counterEnabled="true"
+        app:counterMaxLength="90">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/txtTitle_sua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Title"
+            android:textSize="22sp"
+            android:lineHeight="35sp"
+            android:text="Title is here"
+            />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:errorEnabled="true">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/txtContent_sua"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:gravity="top"
+            android:hint="Nội dung"
+            android:inputType="text|textMultiLine"
+            android:text="Bokutachi wa Benkyou ga DekinaiKenja no mango Ballroom e Youkos"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/txtNhacNho_sua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nhắc nhở: "/>
+    <FrameLayout
+        android:id="@+id/framHinh"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/imgHinh_sua"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <Button
+            android:id="@+id/btnRemove"
+            android:background="@drawable/deletebtn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="8dp"
+            android:layout_marginTop="15dp"/>
+    </FrameLayout>
+
+</LinearLayout>
